@@ -33,7 +33,7 @@
     <text x="80" y="416" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#aaaaaa" letter-spacing="0.5">Vue.js · TypeScript · Node.js · Python · Topología Algebraica · Ciencia Cognitiva Computacional</text>
 
     <!-- URL -->
-    <text x="80" y="544" font-family="ui-monospace, 'Cascadia Code', Consolas, 'Courier New', monospace" font-size="14" fill="#bbbbbb" letter-spacing="0.5">kevincaracuelllabres.com</text>
+    <text x="80" y="544" font-family="ui-monospace, 'Cascadia Code', Consolas, 'Courier New', monospace" font-size="14" fill="#bbbbbb" letter-spacing="0.5">kevincll.github.io/CV</text>
 
     <!-- Bottom accent bar -->
     <rect y="624" width="1200" height="6" fill="#1a5276"/>

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kevincaracuelllabres.com/sitemap.xml
+Sitemap: https://kevincll.github.io/CV/sitemap.xml
