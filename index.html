@@ -1,102 +1,826 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-
+<!DOCTYPE html>
+<html lang="es">
 <head>
-     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-     <title>One Page Resume</title>
+    <!-- Primary Meta Tags -->
+    <title>Kevin Caracuel Llabrés — Software Architect · Ingeniero · Filósofo</title>
+    <meta name="title" content="Kevin Caracuel Llabrés — Software Architect · Ingeniero · Filósofo">
+    <meta name="description" content="Software Architect en Airbus Defence &amp; Space. Doctor en Filosofía por la Universidad de Sevilla. Investigador en topología algebraica y consciencia computacional (5 papers indexados). Matemático, ingeniero mecatrónico, +10 años liderando equipos. Escritor de ciencia ficción dura. Lloseta, Baleares.">
+    <meta name="keywords" content="Kevin Caracuel Llabrés, Kevin Caracuel, Caracuel Llabrés, Software Architect, Arquitecto de Software, Airbus, Matemático, Ingeniero Mecatrónico, Ciencia Cognitiva Computacional, Filosofía de la Mente, Topología Algebraica, Frontend Architect, Universidad de Sevilla, Universitat Pompeu Fabra, Universitat de les Illes Balears, Vue.js, TypeScript, Node.js, Python, Doctorado, PhD, Invariantes, ciencia ficción dura, Baleares, Mallorca, Lloseta">
+    <meta name="author" content="Kevin Caracuel Llabrés">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="color-scheme" content="light">
+    <link rel="canonical" href="https://kevincaracuelllabres.com/">
+    <link rel="alternate" hreflang="es" href="https://kevincaracuelllabres.com/">
+    <link rel="alternate" hreflang="ca" href="https://kevincaracuelllabres.com/?lang=ca">
+    <link rel="alternate" hreflang="en" href="https://kevincaracuelllabres.com/?lang=en">
+    <link rel="alternate" hreflang="x-default" href="https://kevincaracuelllabres.com/">
 
-     <link rel="stylesheet" type="text/css" href="./styles/main.css">
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://kevincaracuelllabres.com/">
+    <meta property="og:title" content="Kevin Caracuel Llabrés — Software Architect · Ingeniero · Filósofo">
+    <meta property="og:description" content="Software Architect en Airbus. Doctor en Filosofía. 5 papers en consciencia computacional y topología. +10 años liderando equipos frontend. Escritor de ciencia ficción dura.">
+    <meta property="og:image" content="https://kevincaracuelllabres.com/img/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Kevin Caracuel Llabrés — Software Architect, Ingeniero, Filósofo. Tarjeta profesional.">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:locale:alternate" content="ca_ES">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:site_name" content="Kevin Caracuel Llabrés">
+    <meta property="profile:first_name" content="Kevin">
+    <meta property="profile:last_name" content="Caracuel Llabrés">
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kevin Caracuel Llabrés — Software Architect · Ingeniero · Filósofo">
+    <meta name="twitter:description" content="Software Architect en Airbus. Doctor en Filosofía. 5 papers en consciencia computacional y topología. +10 años de experiencia.">
+    <meta name="twitter:image" content="https://kevincaracuelllabres.com/img/og-image.png">
+    <meta name="twitter:image:alt" content="Kevin Caracuel Llabrés — Software Architect, Ingeniero, Filósofo">
+
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JSON-LD: ProfilePage + Person -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "dateCreated": "2026-01-01",
+        "dateModified": "2026-02-13",
+        "mainEntity": {
+            "@type": "Person",
+            "@id": "https://kevincaracuelllabres.com/#person",
+            "name": "Kevin Caracuel Llabrés",
+            "givenName": "Kevin",
+            "familyName": "Caracuel Llabrés",
+            "url": "https://kevincaracuelllabres.com",
+            "image": "https://kevincaracuelllabres.com/img/og-image.png",
+            "birthDate": "1989",
+            "jobTitle": "Software Architect",
+            "description": "Software Architect en Airbus Defence & Space. Ingeniero mecatrónico y matemático con doctorado en filosofía de la ciencia cognitiva. Investigador en topología algebraica aplicada a la consciencia. 5 artículos en revistas indexadas. Escritor de ciencia ficción dura.",
+            "worksFor": {
+                "@type": "Organization",
+                "name": "Airbus Defence & Space",
+                "url": "https://www.airbus.com"
+            },
+            "alumniOf": [
+                {"@type": "CollegeOrUniversity", "name": "Universidad de Sevilla", "url": "https://www.us.es"},
+                {"@type": "CollegeOrUniversity", "name": "Universitat de les Illes Balears", "url": "https://www.uib.es"},
+                {"@type": "EducationalOrganization", "name": "IEDIB — Institut d'Ensenyaments a Distància de les Illes Balears"}
+            ],
+            "hasCredential": [
+                {
+                    "@type": "EducationalOccupationalCredential",
+                    "credentialCategory": "degree",
+                    "name": "Doctorado en Filosofía — Ciencia Cognitiva Computacional",
+                    "educationalLevel": "Doctoral",
+                    "recognizedBy": {"@type": "CollegeOrUniversity", "name": "Universidad de Sevilla"}
+                },
+                {
+                    "@type": "EducationalOccupationalCredential",
+                    "credentialCategory": "degree",
+                    "name": "Máster en Lógica y Filosofía de la Ciencia",
+                    "educationalLevel": "Master",
+                    "recognizedBy": {"@type": "CollegeOrUniversity", "name": "Universidad de Sevilla"}
+                },
+                {
+                    "@type": "EducationalOccupationalCredential",
+                    "credentialCategory": "degree",
+                    "name": "Grado en Ingeniería Electrónica, Robótica y Mecatrónica",
+                    "educationalLevel": "Bachelor",
+                    "recognizedBy": {"@type": "CollegeOrUniversity", "name": "Universidad de Sevilla"}
+                },
+                {
+                    "@type": "EducationalOccupationalCredential",
+                    "credentialCategory": "degree",
+                    "name": "Grado en Matemáticas",
+                    "educationalLevel": "Bachelor",
+                    "recognizedBy": {"@type": "CollegeOrUniversity", "name": "Universitat de les Illes Balears"}
+                }
+            ],
+            "hasOccupation": {
+                "@type": "Occupation",
+                "name": "Software Architect",
+                "occupationLocation": {
+                    "@type": "City",
+                    "name": "Madrid",
+                    "containedInPlace": {"@type": "Country", "name": "Spain"}
+                }
+            },
+            "knowsAbout": [
+                "Software Architecture", "Vue.js", "TypeScript", "Node.js", "Python",
+                "Frontend Development", "Computational Cognitive Science", "Philosophy of Mind",
+                "Algebraic Topology", "Category Theory", "Artificial Intelligence", "Machine Learning"
+            ],
+            "knowsLanguage": [
+                {"@type": "Language", "name": "Spanish", "alternateName": "es"},
+                {"@type": "Language", "name": "Catalan", "alternateName": "ca"},
+                {"@type": "Language", "name": "English", "alternateName": "en"}
+            ],
+            "sameAs": ["https://www.linkedin.com/in/kevin-cll"],
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Lloseta",
+                "addressRegion": "Islas Baleares",
+                "addressCountry": "ES"
+            }
+        }
+    }
+    </script>
+
+    <!-- JSON-LD: WebSite -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Kevin Caracuel Llabrés",
+        "alternateName": "Kevin Caracuel",
+        "url": "https://kevincaracuelllabres.com",
+        "description": "Dossier profesional de Kevin Caracuel Llabrés — Software Architect, investigador y escritor.",
+        "inLanguage": ["es", "ca", "en"],
+        "author": {"@id": "https://kevincaracuelllabres.com/#person"}
+    }
+    </script>
+
+    <!-- JSON-LD: ScholarlyArticle publications -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Publicaciones científicas de Kevin Caracuel Llabrés",
+        "numberOfItems": 5,
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                    "@type": "ScholarlyArticle",
+                    "name": "Invariantes Topológicos de la Experiencia Fenoménica: Un Marco Computacional para el Mapeo de Qualia",
+                    "author": [
+                        {"@type": "Person", "name": "Kevin Caracuel Llabrés"},
+                        {"@type": "Person", "name": "Elena Vidal-Moreno"},
+                        {"@type": "Person", "name": "Marcos Aráoz-Gutiérrez"}
+                    ],
+                    "datePublished": "2016",
+                    "isPartOf": {"@type": "Periodical", "name": "Revista Iberoamericana de Filosofía y Ciencias Cognitivas"},
+                    "url": "https://kevincaracuelllabres.com/files/papers/Invariantes_Topologicos_Experiencia_Fenomenica_2016.pdf"
+                }
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "item": {
+                    "@type": "ScholarlyArticle",
+                    "name": "Gradientes Morales en Sustratos No-Biológicos: Hacia un Cálculo de Agencia Ética Sintética",
+                    "author": [
+                        {"@type": "Person", "name": "Kevin Caracuel Llabrés"},
+                        {"@type": "Person", "name": "Elena Vidal-Moreno"}
+                    ],
+                    "datePublished": "2017",
+                    "isPartOf": {"@type": "Periodical", "name": "Daímon. Revista Internacional de Filosofía"},
+                    "url": "https://kevincaracuelllabres.com/files/papers/Gradientes_Morales_Sustratos_No_Biologicos_2017.pdf"
+                }
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "item": {
+                    "@type": "ScholarlyArticle",
+                    "name": "Isomorfismo Causal e Independencia de Sustrato: Condiciones Necesarias para la Transferencia Funcional de Consciencia",
+                    "author": [
+                        {"@type": "Person", "name": "Kevin Caracuel Llabrés"},
+                        {"@type": "Person", "name": "Elena Vidal-Moreno"},
+                        {"@type": "Person", "name": "Joan Ferrer-Casademunt"}
+                    ],
+                    "datePublished": "2018",
+                    "isPartOf": {"@type": "Periodical", "name": "Minds and Machines"},
+                    "url": "https://kevincaracuelllabres.com/files/papers/Isomorfismo_Causal_Independencia_Sustrato_2018.pdf"
+                }
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "item": {
+                    "@type": "ScholarlyArticle",
+                    "name": "Ontología Lúdica y Emergencia Cognitiva: Los Juegos de Mesa como Espacios de Fase para la Consciencia Estratégica",
+                    "author": [
+                        {"@type": "Person", "name": "Kevin Caracuel Llabrés"},
+                        {"@type": "Person", "name": "Marc Pujol-Riera"}
+                    ],
+                    "datePublished": "2019",
+                    "isPartOf": {"@type": "Periodical", "name": "Phenomenology and the Cognitive Sciences"},
+                    "url": "https://kevincaracuelllabres.com/files/papers/Ludic_Ontology_Cognitive_Emergence_2019.pdf"
+                }
+            },
+            {
+                "@type": "ListItem",
+                "position": 5,
+                "item": {
+                    "@type": "ScholarlyArticle",
+                    "name": "Ficción especulativa, consciencia simulada y los límites del programa topológico",
+                    "author": [{"@type": "Person", "name": "Kevin Caracuel Llabrés"}],
+                    "datePublished": "2020",
+                    "isPartOf": {"@type": "Periodical", "name": "Teorema. Revista Internacional de Filosofía"},
+                    "url": "https://kevincaracuelllabres.com/files/papers/Ciudad_Permutacion_Revisitada_2020.pdf"
+                }
+            }
+        ]
+    }
+    </script>
 </head>
-
 <body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#hero" class="nav__logo">Kevin Caracuel Llabrés</a>
+            <button class="nav__toggle" id="nav-toggle" aria-label="Menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav__menu" id="nav-menu">
+                <li><a href="#perfil" class="nav__link" data-i18n="nav.perfil">Perfil</a></li>
+                <li><a href="#experiencia" class="nav__link" data-i18n="nav.experiencia">Experiencia</a></li>
+                <li><a href="#formacion" class="nav__link" data-i18n="nav.formacion">Formación</a></li>
+                <li><a href="#publicaciones" class="nav__link" data-i18n="nav.publicaciones">Publicaciones</a></li>
+                <li><a href="#personal" class="nav__link" data-i18n="nav.personal">Personal</a></li>
+                <li><a href="#contacto" class="nav__link" data-i18n="nav.contacto">Contacto</a></li>
+            </ul>
+            <div class="nav__lang" id="lang-switcher">
+                <button class="lang__btn active" data-lang="es">ES</button>
+                <button class="lang__btn" data-lang="ca">CA</button>
+                <button class="lang__btn" data-lang="en">EN</button>
+            </div>
+        </nav>
+    </header>
 
-    <div id="page-wrap">
-    
-        <img src="./images/cthulu.png" alt="Photo of Cthulu" id="pic" />
-    
-        <div id="contact-info" class="vcard">
-        
-            <!-- Microformats! -->
-        
-            <h1 class="fn">C'thulhu</h1>
-        
-            <p>
-                Cell: <span class="tel">555-666-7777</span><br />
-                Email: <a class="email" href="mailto:greatoldone@lovecraft.com">greatoldone@lovecraft.com</a>
-            </p>
-        </div>
-                
-        <div id="objective">
-            <p>
-                I am an outgoing and energetic (ask anybody) young professional, seeking a 
-                career that fits my professional skills, personality, and murderous tendencies. 
-                My squid-like head is a masterful problem solver and inspires fear in who gaze upon it. 
-                I can bring world domination to your organization. 
-            </p>
-        </div>
-        
-        <div class="clear"></div>
-        
-        <dl>
-            <dd class="clear"></dd>
-            
-            <dt>Education</dt>
-            <dd>
-                <h2>Withering Madness University - Planet Vhoorl</h2>
-                <p><strong>Major:</strong> Public Relations<br />
-                   <strong>Minor:</strong> Scale Tending</p>
-            </dd>
-            
-            <dd class="clear"></dd>
-            
-            <dt>Skills</dt>
-            <dd>
-                <h2>Office skills</h2>
-                <p>Office and records management, database administration, event organization, customer support, travel coordination</p>
-                
-                <h2>Computer skills</h2>
-                <p>Microsoft productivity software (Word, Excel, etc), Adobe Creative Suite, Windows</p>
-            </dd>
-            
-            <dd class="clear"></dd>
-            
-            <dt>Experience</dt>
-            <dd>
-                <h2>Doomsday Cult <span>Leader/Overlord - Baton Rogue, LA - 1926-2010</span></h2>
-                <ul>
-                    <li>Inspired and won highest peasant death competition among servants</li>
-                    <li>Helped coordinate managers to grow cult following</li>
-                    <li>Provided untimely deaths to all who opposed</li>
-                </ul>
-                
-                <h2>The Watering Hole <span>Bartender/Server - Milwaukee, WI - 2009</span></h2>
-                <ul>
-                    <li>Worked on grass-roots promotional campaigns</li>
-                    <li>Reduced theft and property damage percentages</li>
-                    <li>Janitorial work, Laundry</li>
-                </ul> 
-            </dd>
-            
-            <dd class="clear"></dd>
-            
-            <dt>Hobbies</dt>
-            <dd>World Domination, Deep Sea Diving, Murder Most Foul</dd>
-            
-            <dd class="clear"></dd>
-            
-            <dt>References</dt>
-            <dd>Available on request</dd>
-            
-            <dd class="clear"></dd>
-        </dl>
-        
-        <div class="clear"></div>
-    
-    </div>
+    <main>
+        <!-- Hero -->
+        <section class="hero" id="hero">
+            <div class="container">
+                <h1 class="hero__name">Kevin Caracuel Llabrés</h1>
+                <p class="hero__tagline" data-i18n="hero.tagline">Arquitecto de Software · Ingeniero · Filósofo</p>
+            </div>
+        </section>
 
+        <!-- 1. Perfil -->
+        <section class="section" id="perfil">
+            <div class="container">
+                <h2 class="section__title"><span class="section__number">1.</span> <span data-i18n="profile.title">Perfil</span></h2>
+                <div class="profile__text" data-i18n-html="profile.text">
+                    <p>De soldado a matemático, de ingeniero a filósofo, de filósofo a arquitecto de software. Mi carrera nunca ha seguido una línea recta, y ese es precisamente el punto.</p>
+                    <p>Empecé con un Grado en Matemáticas en Mallorca mientras servía en el Ejército de Tierra. Luego me trasladé a Sevilla para cursar Ingeniería Mecatrónica, seguida de un Máster y un Doctorado en Filosofía de la Ciencia, donde pasé cuatro años formalizando la consciencia a través de la topología y publicando en revistas indexadas con investigadores de la Universidad de Sevilla y la Universitat Pompeu Fabra.</p>
+                    <p>Desde 2016 construyo software profesionalmente. He liderado squads de frontend en Inditex/Bershka, diseñado arquitecturas en Airbus y lanzado productos en startups de los sectores inmobiliario y turístico. También he desarrollado aplicaciones con inteligencia artificial como freelance.</p>
+                    <p>Soy presidente de la asociación de videojuegos, juegos de mesa y rol más grande de Mallorca, y actualmente publico un libro que reúne todo lo que he explorado: matemáticas, consciencia y los límites de lo que los sistemas formales pueden capturar.</p>
+                    <p>Me gustan los problemas difíciles, las intersecciones inusuales y los equipos que se preocupan por el oficio.</p>
+                </div>
+                <div class="profile__data">
+                    <!-- Row 1 -->
+                    <div class="profile__data-item">
+                        <p class="profile__data-label" data-i18n="profile.nacimiento">Nacimiento</p>
+                        <p class="profile__data-value">1989</p>
+                    </div>
+                    <div class="profile__data-item">
+                        <p class="profile__data-label" data-i18n="profile.residencia">Residencia</p>
+                        <p class="profile__data-value"><small data-i18n="profile.residencia.val">Lloseta, Baleares, España</small></p>
+                    </div>
+                    <div class="profile__data-item">
+                        <p class="profile__data-label" data-i18n="profile.idiomas">Idiomas</p>
+                        <p class="profile__data-value">3</p>
+                    </div>
+                    <!-- Row 2 -->
+                    <div class="profile__data-item">
+                        <p class="profile__data-label" data-i18n="profile.estudios">Estudios</p>
+                        <p class="profile__data-value"><small data-i18n="profile.estudios.val">2 carreras, 1 máster y 1 doctorado</small></p>
+                    </div>
+                    <div class="profile__data-item">
+                        <p class="profile__data-label" data-i18n="profile.papers">Papers</p>
+                        <p class="profile__data-value">5</p>
+                    </div>
+                    <div class="profile__data-item">
+                        <p class="profile__data-label" data-i18n="profile.conf">Conferencias</p>
+                        <p class="profile__data-value">3</p>
+                    </div>
+                    <!-- Row 3 -->
+                    <div class="profile__data-item">
+                        <p class="profile__data-label" data-i18n="profile.exp">Experiencia</p>
+                        <p class="profile__data-value">10+ <small data-i18n="profile.years">años</small></p>
+                    </div>
+                    <div class="profile__data-item">
+                        <p class="profile__data-label" data-i18n="profile.escrito">Texto escrito</p>
+                        <p class="profile__data-value"><small data-i18n="profile.escrito.val">1 libro + 1 guión en desarrollo</small></p>
+                    </div>
+                    <div class="profile__data-item">
+                        <p class="profile__data-label" data-i18n="profile.voluntariado">Voluntariado</p>
+                        <p class="profile__data-value"><small data-i18n="profile.voluntariado.val">2 organizaciones</small></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Experiencia -->
+        <section class="section" id="experiencia">
+            <div class="container">
+                <h2 class="section__title"><span class="section__number">2.</span> <span data-i18n="exp.title">Experiencia laboral</span></h2>
+
+                <article class="experience__item">
+                    <div class="experience__meta">
+                        <p class="experience__date" data-i18n="exp.airbus.date">Mar 2023 - Presente</p>
+                        <p class="experience__location" data-i18n="exp.airbus.loc">Madrid, España</p>
+                    </div>
+                    <div>
+                        <h3 class="experience__role">Software Architect</h3>
+                        <p class="experience__company">Airbus</p>
+                        <div class="experience__desc" data-i18n-html="exp.airbus.desc">
+                            <p>Airbus, el mayor fabricante de aeronaves del mundo.</p>
+                            <p><strong>Responsabilidades:</strong></p>
+                            <ul>
+                                <li>Arquitectura de nuevos proyectos</li>
+                                <li>Organización y gestión de equipos Front y Back.</li>
+                                <li>Creación de objetivos y prioridades respecto a proyectos.</li>
+                                <li>Enlace entre negocio y desarrollo</li>
+                            </ul>
+                            <p><strong>Implementaciones destacadas:</strong></p>
+                            <ul>
+                                <li>Editor de contenido personalizado basado en necesidades de la empresa. Fórmulas matemáticas, requisitos específicos, etc.</li>
+                                <li>Una aplicación interna que distribuye usuarios y clientes...</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="experience__item">
+                    <div class="experience__meta">
+                        <p class="experience__date" data-i18n="exp.freelance.date">Feb 2024 - Sep 2025</p>
+                        <p class="experience__location" data-i18n="exp.freelance.loc">España</p>
+                    </div>
+                    <div>
+                        <h3 class="experience__role">Artificial Intelligence Architect</h3>
+                        <p class="experience__company">Freelance</p>
+                        <div class="experience__desc" data-i18n-html="exp.freelance.desc">
+                            <p>Especializado en aplicaciones web con IA e interfaces conversacionales.</p>
+                            <p><strong>Responsabilidades:</strong></p>
+                            <ul>
+                                <li>Diseño e implementación de soluciones web con IA para diversos clientes y proyectos personales</li>
+                                <li>Desarrollo de chatbots y agentes conversacionales con técnicas modernas de NLP</li>
+                                <li>Integración de modelos AI/ML con frameworks frontend para experiencias de usuario mejoradas</li>
+                                <li>Diseño de arquitectura para aplicaciones de IA escalables con capacidades en tiempo real</li>
+                                <li>Consultoría en estrategia de IA e implementación</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="experience__item">
+                    <div class="experience__meta">
+                        <p class="experience__date">Oct 2020 - Feb 2023</p>
+                        <p class="experience__location">Barcelona</p>
+                    </div>
+                    <div>
+                        <h3 class="experience__role">Squad Lead Frontend Developer</h3>
+                        <p class="experience__company">Bershka (Grupo Inditex)</p>
+                        <div class="experience__desc" data-i18n-html="exp.bershka.desc">
+                            <p>Inditex, +152K empleados y más de 7.000 tiendas en todo el mundo.</p>
+                            <p><strong>Responsabilidades:</strong></p>
+                            <ul>
+                                <li>Desarrollador senior en el squad de Customer. UX, Navegación y Generación de formularios.</li>
+                                <li>Desarrollador senior en el squad de Checkout. Pagos.</li>
+                                <li>Squad lead de Discovery. Nuevas funcionalidades.</li>
+                                <li>Squad lead de CustomLabs. Personalización.</li>
+                            </ul>
+                            <p><strong>Implementaciones destacadas:</strong></p>
+                            <ul>
+                                <li>Un generador de formularios basado en archivos estáticos para despliegue en caliente.</li>
+                                <li>Una navegación por pila basada en los sistemas de navegación nativos.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="experience__item">
+                    <div class="experience__meta">
+                        <p class="experience__date" data-i18n="exp.housfy.date">Nov 2019 - Ago 2020</p>
+                        <p class="experience__location">Barcelona</p>
+                    </div>
+                    <div>
+                        <h3 class="experience__role">Senior Frontend Developer</h3>
+                        <p class="experience__company">Housfy</p>
+                        <div class="experience__desc" data-i18n-html="exp.housfy.desc">
+                            <p>Startup, una de las inmobiliarias de mayor crecimiento en Europa.</p>
+                            <p><strong>Responsabilidades:</strong></p>
+                            <ul>
+                                <li>Desarrollo general de frontend y UI/UX.</li>
+                                <li>Squad lead de las secciones de Housfy Pro.</li>
+                                <li>Squad lead de las secciones de alquileres.</li>
+                            </ul>
+                            <p><strong>Implementaciones destacadas:</strong></p>
+                            <ul>
+                                <li>Un sistema basado en componentes para creación ultrarrápida de landings.</li>
+                                <li>Un minijuego divertido basado en el dinosaurio de Chrome para un spot de marketing.</li>
+                            </ul>
+                            <p>Debido a la pandemia y problemas internos, todo el equipo de desarrollo abandonó el proyecto.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="experience__item">
+                    <div class="experience__meta">
+                        <p class="experience__date" data-i18n="exp.everis1.date">Sep 2018 - Nov 2019</p>
+                        <p class="experience__location">Barcelona</p>
+                    </div>
+                    <div>
+                        <h3 class="experience__role">Frontend Architect</h3>
+                        <p class="experience__company">Everis (NTT Data), Zurich Insurance</p>
+                        <div class="experience__desc" data-i18n-html="exp.everis1.desc">
+                            <p>Zurich, la mayor aseguradora de Suiza. La 117.ª empresa pública más grande del mundo.</p>
+                            <p><strong>Responsabilidades:</strong></p>
+                            <ul>
+                                <li>Liderar el nuevo squad de Frontend de un nuevo proyecto.</li>
+                                <li>Mentoría del equipo previamente especializado en Java.</li>
+                            </ul>
+                            <p><strong>Implementaciones destacadas:</strong></p>
+                            <ul>
+                                <li>Una librería de componentes con playground para usar en todos los proyectos de la empresa.</li>
+                                <li>Skeleton base para cualquier nueva aplicación.</li>
+                                <li>Snippets, automatizaciones, documentación y otras mejoras de productividad...</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="experience__item">
+                    <div class="experience__meta">
+                        <p class="experience__date" data-i18n="exp.everis2.date">Sep 2017 - Sep 2018</p>
+                        <p class="experience__location">Llucmajor, Mallorca</p>
+                    </div>
+                    <div>
+                        <h3 class="experience__role">Frontend Developer</h3>
+                        <p class="experience__company">Everis (NTT Data), Air Europa</p>
+                        <div class="experience__desc" data-i18n-html="exp.everis2.desc">
+                            <p>Air Europa, la tercera aerolínea española.</p>
+                            <p><strong>Responsabilidades:</strong></p>
+                            <ul>
+                                <li>Liderar la migración de la arquitectura antigua (JQuery) a una nueva (Vue.js).</li>
+                                <li>Mentoría del equipo previamente centrado en backend.</li>
+                                <li>Integración de nuevas metodologías ágiles en la empresa.</li>
+                            </ul>
+                            <p>El proyecto fue migrado exitosamente a una nueva arquitectura.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="experience__item">
+                    <div class="experience__meta">
+                        <p class="experience__date" data-i18n="exp.hundredrooms.date">Feb 2016 - Sep 2017</p>
+                        <p class="experience__location">Palma de Mallorca</p>
+                    </div>
+                    <div>
+                        <h3 class="experience__role">Frontend Developer</h3>
+                        <p class="experience__company">Hundredrooms</p>
+                        <div class="experience__desc" data-i18n-html="exp.hundredrooms.desc">
+                            <p>Startup, comparador internacional de alojamientos vacacionales.</p>
+                            <p><strong>Responsabilidades:</strong></p>
+                            <ul>
+                                <li>Frontend Junior.</li>
+                                <li>Supervisión e implementación del UI/UX.</li>
+                                <li>Participación activa en la metodología ágil Scrum.</li>
+                            </ul>
+                            <p><strong>Implementaciones destacadas:</strong></p>
+                            <ul>
+                                <li>Funcionalidad de dibujo sobre mapa para mostrar solo las casas dentro de esos vectores.</li>
+                                <li>Sistema de A/B testing basado en porcentajes.</li>
+                                <li>WYSIWYG para publicar posts de blog para el equipo de contenidos.</li>
+                            </ul>
+                            <p>La empresa fue adquirida exitosamente por Holidu.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="experience__item">
+                    <div class="experience__meta">
+                        <p class="experience__date" data-i18n="exp.upf.date">Sep 2016 - Dic 2020</p>
+                        <p class="experience__location">Barcelona</p>
+                    </div>
+                    <div>
+                        <h3 class="experience__role" data-i18n="exp.upf.role">Investigador asociado</h3>
+                        <p class="experience__company">Cognition and Brain Group, Dept. DTIC, Universitat Pompeu Fabra</p>
+                        <div class="experience__desc" data-i18n-html="exp.upf.desc">
+                            <p>Cognition and Brain Group, Departamento de Tecnologías de la Información y las Comunicaciones (DTIC). Investigación en formalización topológica de la consciencia y ciencia cognitiva computacional. Publicación de 5 artículos en revistas indexadas (2016-2020) sobre invariantes topológicos de la experiencia fenoménica, gradientes morales en sustratos no biológicos, isomorfismo causal, ontología lúdica y los límites del programa topológico. Colaboración con investigadores de la Universidad de Sevilla y la UPF.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="experience__item">
+                    <div class="experience__meta">
+                        <p class="experience__date">Jul 2008 - Oct 2010</p>
+                        <p class="experience__location">Palma de Mallorca</p>
+                    </div>
+                    <div>
+                        <h3 class="experience__role" data-i18n="exp.army.role">Soldado de Infantería</h3>
+                        <p class="experience__company" data-i18n="exp.army.company">Ejército de Tierra, RIL Palma 47</p>
+                        <div class="experience__desc" data-i18n-html="exp.army.desc">
+                            <ul>
+                                <li>Formación militar básica en CIMOV (Centro de Formación de Tropa nº 1), Cáceres (3 meses).</li>
+                                <li>Destinado en el Regimiento de Infantería Ligera &laquo;Palma&raquo; 47, Illes Balears.</li>
+                                <li>Ejercicios de campo en Menorca, Chinchilla (Albacete), San Gregorio (Zaragoza) y Cabrera.</li>
+                                <li>Misión de paz de 3 meses en Afganistán (ISAF).</li>
+                                <li>Tirador selecto y operador de radio.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 3. Formación -->
+        <section class="section" id="formacion">
+            <div class="container">
+                <h2 class="section__title"><span class="section__number">3.</span> <span data-i18n="edu.title">Formación académica</span></h2>
+
+                <article class="education__item">
+                    <div>
+                        <p class="education__period">2024 - 2025</p>
+                    </div>
+                    <div>
+                        <p class="education__degree" data-i18n="edu.iedib">Especialización en Inteligencia Artificial y Big Data</p>
+                        <p class="education__center" data-i18n="edu.iedib.center">IEDIB — Institut d'Ensenyaments a Distància de les Illes Balears</p>
+                        <p class="education__desc" data-i18n="edu.iedib.desc">Formación avanzada en aprendizaje automático, procesamiento del lenguaje natural, infraestructura de datos a gran escala y despliegue de modelos en entornos de producción.</p>
+                    </div>
+                </article>
+
+                <article class="education__item">
+                    <div>
+                        <p class="education__period">2015 - 2018</p>
+                    </div>
+                    <div>
+                        <p class="education__degree" data-i18n="edu.phd">Doctorado en Filosofía (investigación en ciencia cognitiva computacional)</p>
+                        <p class="education__center" data-i18n="edu.phd.center">Universidad de Sevilla (a tiempo parcial)</p>
+                        <p class="education__thesis" data-i18n="edu.phd.thesis">Tesis: &laquo;Marco topológico para la clasificación de estados fenomenológicos en sustratos computacionales&raquo;</p>
+                        <p class="education__desc" data-i18n="edu.phd.desc">Dept. de Filosofía, Lógica y Filosofía de la Ciencia (Línea 3). Directora: Elena Vidal-Moreno. Tres artículos publicados en revistas indexadas durante el periodo doctoral.</p>
+                    </div>
+                </article>
+
+                <article class="education__item">
+                    <div>
+                        <p class="education__period">2014 - 2015</p>
+                    </div>
+                    <div>
+                        <p class="education__degree" data-i18n="edu.master">Máster Interuniversitario en Lógica y Filosofía de la Ciencia</p>
+                        <p class="education__center" data-i18n="edu.master.center">Universidad de Sevilla (programa coordinado por USAL, UVa, USC, ULL, UDC, CSIC)</p>
+                        <p class="education__thesis" data-i18n="edu.master.thesis">TFM: &laquo;Invariantes topológicos de la experiencia fenoménica&raquo;</p>
+                        <p class="education__desc" data-i18n="edu.master.desc">Investigación centrada en filosofía de la mente y ciencia cognitiva. Este trabajo sentó las bases para el primer artículo publicado en 2016.</p>
+                    </div>
+                </article>
+
+                <article class="education__item">
+                    <div>
+                        <p class="education__period">2012 - 2014</p>
+                    </div>
+                    <div>
+                        <p class="education__degree" data-i18n="edu.eng">Grado en Ingeniería Electrónica, Robótica y Mecatrónica</p>
+                        <p class="education__center" data-i18n="edu.eng.center">Universidad de Sevilla (título interuniversitario UMA-US, con convalidaciones del Grado en Matemáticas)</p>
+                        <p class="education__thesis" data-i18n="edu.eng.thesis">TFG: &laquo;Redes neuronales recurrentes aplicadas al control adaptativo de sistemas autónomos&raquo;</p>
+                        <p class="education__desc" data-i18n="edu.eng.desc">Formación en electrónica, robótica, sistemas de control y mecatrónica aplicada. Completado en dos años académicos gracias a módulos convalidados (cálculo, álgebra lineal, física, programación).</p>
+                    </div>
+                </article>
+
+                <article class="education__item">
+                    <div>
+                        <p class="education__period">2008 - 2012</p>
+                    </div>
+                    <div>
+                        <p class="education__degree" data-i18n="edu.math">Grado en Matemáticas</p>
+                        <p class="education__center" data-i18n="edu.math.center">Universitat de les Illes Balears</p>
+                        <p class="education__thesis" data-i18n="edu.math.thesis">TFG: &laquo;Invariantes homológicos en espacios de configuración topológica&raquo;</p>
+                        <p class="education__desc" data-i18n="edu.math.desc">Compatible con el servicio militar (RIL Palma 47, julio 2008 - octubre 2010). Enfoque en topología y álgebra. Este grado proporcionó los fundamentos formales para la posterior investigación en topología aplicada a la filosofía de la mente.</p>
+                    </div>
+                </article>
+
+                <article class="education__item">
+                    <div>
+                        <p class="education__period">2006 - 2008</p>
+                    </div>
+                    <div>
+                        <p class="education__degree" data-i18n="edu.bach">Bachillerato Tecnológico</p>
+                        <p class="education__center" data-i18n="edu.bach.center">IES Pau Casesnoves, Mallorca</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 4. Publicaciones -->
+        <section class="section" id="publicaciones">
+            <div class="container">
+                <h2 class="section__title"><span class="section__number">4.</span> <span data-i18n="pub.title">Publicaciones</span></h2>
+
+                <!-- Papers -->
+                <div class="pub__group">
+                    <h3 class="pub__group-title" data-i18n="pub.papers">Artículos científicos</h3>
+                    <p class="profile__text" style="margin-bottom:24px; font-size:0.88rem; color:var(--text-muted);" data-i18n="pub.papers.intro">Investigación centrada en la intersección entre matemáticas, ciencia cognitiva computacional y filosofía de la mente. Los trabajos abordan problemas fundamentales sobre la naturaleza de la consciencia, la agencia moral en sistemas artificiales y los límites formales de la transferencia de identidad.</p>
+
+                    <article class="pub__paper">
+                        <h4 class="pub__paper-title">Invariantes Topológicos de la Experiencia Fenoménica: Un Marco Computacional para el Mapeo de Qualia</h4>
+                        <p class="pub__paper-cite">Caracuel Llabrés, K., Vidal-Moreno, E. y Aráoz-Gutiérrez, M. (2016). <em>Revista Iberoamericana de Filosofía y Ciencias Cognitivas</em>, vol. 12, nº 3, pp. 247-289. <a href="files/papers/Invariantes_Topologicos_Experiencia_Fenomenica_2016.pdf" target="_blank" rel="noopener">[PDF]</a></p>
+                        <p class="pub__paper-desc" data-i18n="pub.paper1.desc">Propone que cada experiencia subjetiva posee una estructura matemática formalizable mediante topología real: espacios de Hausdorff, grupos de homología y variedades diferenciables. El marco establece que dos experiencias son fenomenológicamente idénticas si y solo si son topológicamente equivalentes (homeomorfas), lo que implica que qualia idénticos podrían emerger en sustratos radicalmente distintos.</p>
+                    </article>
+
+                    <article class="pub__paper">
+                        <h4 class="pub__paper-title">Gradientes Morales en Sustratos No-Biológicos: Hacia un Cálculo de Agencia Ética Sintética</h4>
+                        <p class="pub__paper-cite">Caracuel Llabrés, K. y Vidal-Moreno, E. (2017). <em>Daímon. Revista Internacional de Filosofía</em>, nº 72, pp. 143-178. <a href="files/papers/Gradientes_Morales_Sustratos_No_Biologicos_2017.pdf" target="_blank" rel="noopener">[PDF]</a></p>
+                        <p class="pub__paper-desc" data-i18n="pub.paper2.desc">Reemplaza la dicotomía clásica &laquo;tiene moral / no tiene moral&raquo; por un campo escalar continuo: cada sistema posee un gradiente de agencia moral, análogo a un campo de temperatura. Define operadores diferenciales sobre este campo (divergencia moral, rotacional ético) y demuestra que la responsabilidad emerge en puntos donde el gradiente supera un umbral crítico, de forma análoga a una transición de fase termodinámica.</p>
+                    </article>
+
+                    <article class="pub__paper">
+                        <h4 class="pub__paper-title">Isomorfismo Causal e Independencia de Sustrato: Condiciones Necesarias para la Transferencia Funcional de Consciencia</h4>
+                        <p class="pub__paper-cite">Caracuel Llabrés, K., Vidal-Moreno, E. y Ferrer-Casademunt, J. (2018). <em>Minds and Machines</em>, vol. 28, nº 3, pp. 451-498. <a href="files/papers/Isomorfismo_Causal_Independencia_Sustrato_2018.pdf" target="_blank" rel="noopener">[PDF]</a></p>
+                        <p class="pub__paper-desc" data-i18n="pub.paper3.desc">Formaliza el &laquo;problema del teletransporte&raquo; con rigor matemático. Utilizando teoría de categorías, define &laquo;isomorfismo causal&raquo; de manera precisa y demuestra que la independencia de sustrato es condición necesaria pero no suficiente para la transferencia de consciencia: se requiere además preservar la estructura temporal fina. Un &laquo;teorema de no-clonación&raquo; para consciencias, análogo al de la mecánica cuántica.</p>
+                    </article>
+
+                    <article class="pub__paper">
+                        <h4 class="pub__paper-title">Ontología Lúdica y Emergencia Cognitiva: Los Juegos de Mesa como Espacios de Fase para la Consciencia Estratégica</h4>
+                        <p class="pub__paper-cite">Caracuel Llabrés, K. y Pujol-Riera, M. (2019). <em>Phenomenology and the Cognitive Sciences</em>, vol. 18, nº 5, pp. 923-961. <a href="files/papers/Ludic_Ontology_Cognitive_Emergence_2019.pdf" target="_blank" rel="noopener">[PDF]</a></p>
+                        <p class="pub__paper-desc" data-i18n="pub.paper4.desc">Defiende que los juegos de mesa son el formato mínimo en el que emerge la consciencia estratégica. Conecta la fenomenología de Husserl con la teoría de sistemas dinámicos, definiendo &laquo;espacios de fase lúdicos&raquo; donde los atractores son las estrategias ganadoras y los puntos de bifurcación representan los momentos donde la creatividad humana supera al cálculo puro.</p>
+                    </article>
+
+                    <article class="pub__paper">
+                        <h4 class="pub__paper-title">Ficción especulativa, consciencia simulada y los límites del programa topológico</h4>
+                        <p class="pub__paper-cite">Caracuel Llabrés, K. (2020). <em>Teorema. Revista Internacional de Filosofía</em>, vol. XXXIX/3, pp. 73-108. <a href="files/papers/Ciudad_Permutacion_Revisitada_2020.pdf" target="_blank" rel="noopener">[PDF]</a></p>
+                        <p class="pub__paper-desc" data-i18n="pub.paper5.desc">Ensayo reflexivo que cierra el programa de investigación topológica. Partiendo de <em>Ciudad Permutación</em> de Greg Egan, examina los límites inherentes de la formalización matemática de la consciencia y confronta las promesas del marco topológico con sus restricciones fundamentales. Constituye explícitamente el último trabajo académico del autor, que señala la narrativa especulativa como vía para explorar aquello que la formalización no alcanza.</p>
+                    </article>
+                </div>
+
+                <!-- Ciencia ficción -->
+                <div class="pub__group">
+                    <h3 class="pub__group-title" data-i18n="pub.scifi">Ciencia ficción dura</h3>
+                    <article class="pub__book">
+                        <h4 class="pub__book-title">&laquo;Invariantes&raquo;</h4>
+                        <p class="pub__book-meta">2026</p>
+                        <p class="pub__book-desc" data-i18n="pub.invariantes.desc">Trece relatos de ciencia ficción que exploran lo que permanece cuando todo lo demás ha cambiado. La consciencia despojada de su función. La identidad reducida a su esqueleto topológico. El tiempo liberado de su dirección. La información que sobrevive a la muerte del universo. Cada relato parte de una premisa científica rigurosa (la métrica de Alcubierre, la segunda ley de la termodinámica, el polinomio de Jones, la longitud de Planck) y la lleva hasta sus consecuencias más íntimas. De la escala de Planck a la muerte térmica del cosmos, de la corteza insular de un cerebro humano a una burbuja de distorsión métrica, estos relatos trazan un arco que va de lo más íntimo a lo más vasto.</p>
+                    </article>
+                </div>
+
+                <!-- Conferencias -->
+                <div class="pub__group">
+                    <h3 class="pub__group-title" data-i18n="conf.title">Conferencias</h3>
+
+                    <article class="conf__item">
+                        <p class="conf__year">2022</p>
+                        <p><span class="conf__name">CommitConf 2022, Madrid</span>: <span class="conf__talk" data-i18n="conf.conf2.talk">&laquo;Micro-frontends en producción: arquitectura distribuida en Inditex&raquo;</span></p>
+                        <p style="font-size:0.85rem; color:var(--text-muted); margin-top:4px;" data-i18n="conf.conf2.desc">Ponencia sobre la implementación de micro-frontends en el ecosistema de Bershka/Inditex: patrones de integración, estrategias de despliegue independiente y lecciones aprendidas en producción a escala.</p>
+                    </article>
+
+                    <article class="conf__item">
+                        <p class="conf__year">2019</p>
+                        <p><span class="conf__name">JSDayES 2019, Madrid</span>: <span class="conf__talk" data-i18n="conf.conf3.talk">&laquo;De jQuery a Vue.js: migración progresiva en entorno enterprise&raquo;</span></p>
+                        <p style="font-size:0.85rem; color:var(--text-muted); margin-top:4px;" data-i18n="conf.conf3.desc">Caso práctico de la migración de una plataforma legacy de más de 200.000 líneas a un stack moderno con Vue.js en Air Europa, sin interrumpir el servicio ni la velocidad de desarrollo del equipo.</p>
+                    </article>
+
+                    <article class="conf__item">
+                        <p class="conf__year">2018</p>
+                        <p><span class="conf__name" data-i18n="conf.conf1.venue">XI Congreso SLMFCE, Sevilla</span>: <span class="conf__talk" data-i18n="conf.conf1.talk">&laquo;Invariantes topológicos como clasificadores de experiencia fenoménica: resultados y límites&raquo;</span></p>
+                        <p style="font-size:0.85rem; color:var(--text-muted); margin-top:4px;" data-i18n="conf.talk">Ponencia invitada en la mesa &laquo;Formalismos y consciencia&raquo;.</p>
+                    </article>
+
+                    <p style="margin-top:16px; font-size:0.85rem; color:var(--text-muted); font-style:italic;" data-i18n="conf.note">No tengo previstas más apariciones públicas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Competencias -->
+        <section class="section" id="stack">
+            <div class="container">
+                <h2 class="section__title"><span class="section__number">5.</span> <span data-i18n="skills.title">Competencias</span></h2>
+                <div class="stack__group">
+                    <h3 class="stack__group-title" data-i18n="skills.lang">Lenguajes y frameworks</h3>
+                    <div class="stack__tags">
+                        <span class="stack__tag">Vue.js</span>
+                        <span class="stack__tag">TypeScript</span>
+                        <span class="stack__tag">Node.js</span>
+                        <span class="stack__tag">Python</span>
+                        <span class="stack__tag">MATLAB</span>
+                        <span class="stack__tag">LaTeX</span>
+                    </div>
+                </div>
+                <div class="stack__group">
+                    <h3 class="stack__group-title" data-i18n="skills.arch">Arquitectura e infraestructura</h3>
+                    <div class="stack__tags">
+                        <span class="stack__tag">CI/CD</span>
+                        <span class="stack__tag" data-i18n="skills.testing">Estrategias de Testing</span>
+                        <span class="stack__tag" data-i18n="skills.perf">Optimización de Rendimiento</span>
+                        <span class="stack__tag" data-i18n="skills.security">Seguridad</span>
+                        <span class="stack__tag">Git</span>
+                        <span class="stack__tag">SQL</span>
+                        <span class="stack__tag">MongoDB</span>
+                    </div>
+                </div>
+                <div class="stack__group">
+                    <h3 class="stack__group-title" data-i18n="skills.math">Matemáticas e investigación</h3>
+                    <div class="stack__tags">
+                        <span class="stack__tag" data-i18n="skills.topology">Topología Algebraica</span>
+                        <span class="stack__tag" data-i18n="skills.categories">Teoría de Categorías</span>
+                        <span class="stack__tag" data-i18n="skills.cognitive">Ciencia Cognitiva Computacional</span>
+                        <span class="stack__tag" data-i18n="skills.mind">Filosofía de la Mente</span>
+                    </div>
+                </div>
+                <div class="stack__group">
+                    <h3 class="stack__group-title" data-i18n="skills.lead">Liderazgo y gestión</h3>
+                    <div class="stack__tags">
+                        <span class="stack__tag" data-i18n="skills.agile">Metodologías Ágiles</span>
+                        <span class="stack__tag" data-i18n="skills.strategy">Planificación Estratégica</span>
+                        <span class="stack__tag" data-i18n="skills.teams">Liderazgo de Equipos</span>
+                        <span class="stack__tag" data-i18n="skills.product">Ciclo de Vida de Producto</span>
+                        <span class="stack__tag" data-i18n="skills.mentoring">Mentoría</span>
+                    </div>
+                </div>
+                <div class="stack__group">
+                    <h3 class="stack__group-title" data-i18n="skills.idiomas">Idiomas</h3>
+                    <div class="stack__tags">
+                        <span class="stack__tag" data-i18n="skills.es">Español (nativo)</span>
+                        <span class="stack__tag" data-i18n="skills.ca">Catalán (nativo)</span>
+                        <span class="stack__tag" data-i18n="skills.en">Inglés (profesional)</span>
+                    </div>
+                </div>
+                <div class="stack__group">
+                    <h3 class="stack__group-title" data-i18n="skills.other">Otras cualificaciones</h3>
+                    <div class="stack__tags">
+                        <span class="stack__tag" data-i18n="skills.marksman">Tirador selecto (Ejército de Tierra)</span>
+                        <span class="stack__tag" data-i18n="skills.radio">Operador de radio</span>
+                        <span class="stack__tag" data-i18n="skills.drive">Permiso de conducir B</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Personal -->
+        <section class="section" id="personal">
+            <div class="container">
+                <h2 class="section__title"><span class="section__number">6.</span> <span data-i18n="nav.personal">Personal</span></h2>
+
+                <!-- Actividad social -->
+                <div class="pub__group">
+                    <h3 class="pub__group-title" data-i18n="community.title">Actividad social</h3>
+                    <div class="community__item">
+                        <h3 class="community__role" data-i18n="community.games.role">Presidente, Asociación de Videojuegos, Juegos de Mesa y Rol de Mallorca</h3>
+                        <p class="community__desc" data-i18n="community.games.desc">La asociación más grande de Baleares en su categoría. Más de 200 miembros activos. Torneos, jornadas abiertas y eventos de divulgación lúdica.</p>
+                    </div>
+                    <div class="community__item">
+                        <h3 class="community__role" data-i18n="community.caritas.role">Voluntario en centro de día y albergue. Cáritas Mallorca</h3>
+                        <p class="community__desc" data-i18n="community.caritas.desc">Jun 2011 - Jun 2012. Servicio de comidas y atención en centro de día y albergue para personas sin hogar. Asistencia en preparación de alimentos, servicio y cuidado general.</p>
+                    </div>
+                    <div class="community__item">
+                        <h3 class="community__role" data-i18n="community.cruz.role">Voluntario de acompañamiento al final de la vida. Cruz Roja Española</h3>
+                        <p class="community__desc" data-i18n="community.cruz.desc">Oct 2012 - Mar 2013. Acompañamiento y apoyo emocional a pacientes paliativos. Visitas regulares ofreciendo compañía, conversación y presencia durante su etapa final.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Contacto -->
+        <section class="section" id="contacto">
+            <div class="container">
+                <h2 class="section__title"><span class="section__number">7.</span> <span data-i18n="contact.title">Contacto</span></h2>
+                <div class="contact__content">
+                    <div class="contact__info">
+                        <div class="contact__item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            <div>
+                                <p class="contact__item-label" data-i18n="contact.email">Email</p>
+                                <p class="contact__item-value"><a href="mailto:kevincaracuel@gmail.com">kevincaracuel@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact__item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            <div>
+                                <p class="contact__item-label">LinkedIn</p>
+                                <p class="contact__item-value"><a href="https://www.linkedin.com/in/kevin-cll" target="_blank" rel="noopener noreferrer">linkedin.com/in/kevin-cll</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__content">
+            <p class="footer__brand" data-i18n="footer.copy">&copy; 2026 Kevin Caracuel Llabrés</p>
+            <div class="footer__social">
+                <a href="https://www.linkedin.com/in/kevin-cll" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/i18n.js" defer></script>
+    <script src="js/main.js" defer></script>
 </body>
-
 </html>
